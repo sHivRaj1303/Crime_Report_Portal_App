@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Crime Report</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="open"> Open  </string>
+    <string name="close">Cloce  </string>
+    <string name="we_will_send_you_an_one_time_otp_on_this_given_mobile_number">We will send you an one time otp on this given mobile number</string>
+    <string name="enter_mobile_number">Enter Mobile number</string>
+    <string name="otp_verificatio">OTP Verificatio</string>
+    <string name="select">select item</string>
+    <string-array name="crime">
+        <item>Cyber crime </item>
+        <item>Kidnapping</item>
+        <item>Robbery</item>
+        <item>murder</item>
+        <item>drug Offesens</item>
+        <item>Theft</item>
+    </string-array>
+
+</resources>

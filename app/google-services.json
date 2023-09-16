@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "916424747141",
+    "firebase_url": "https://crime-report-47e7e-default-rtdb.firebaseio.com",
+    "project_id": "crime-report-47e7e",
+    "storage_bucket": "crime-report-47e7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916424747141:android:c848e6317b425e17bfa1ec",
+        "android_client_info": {
+          "package_name": "com.example.crimereport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916424747141-m3jkp3dvd50esl4i7s28pe32ttjinqf0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.crimereport",
+            "certificate_hash": "abaf63d71f91b7827e30348af48c3c0c85413f7d"
+          }
+        },
+        {
+          "client_id": "916424747141-262k220tg4gt9q4ge5evlbtk8fjdhrlb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK3KlrPQpW3AGjZ7WNAlN9JIP2jFkDDJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916424747141-262k220tg4gt9q4ge5evlbtk8fjdhrlb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

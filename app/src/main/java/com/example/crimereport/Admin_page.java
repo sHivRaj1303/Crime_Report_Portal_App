@@ -1,0 +1,78 @@
+package com.example.crimereport;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.navigation.NavigationView;
+
+public class Admin_page extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_admin_page);
+        MaterialToolbar toolbar = findViewById(R.id.topAppBar_1);
+        DrawerLayout drawerLayout = findViewById(R.id.drawer_layout1);
+        NavigationView navigationView = findViewById(R.id.navigation_view_1);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                drawerLayout.openDrawer(GravityCompat.START);
+
+            }
+        });
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                int id = item.getItemId();
+                drawerLayout.closeDrawer(GravityCompat.START);
+
+                switch (id){
+                    case R.id.home_menu:
+
+                        Toast.makeText(Admin_page.this, "home page is  opne ", Toast.LENGTH_LONG).show();break;
+
+                    case R.id.search_menu:
+
+                        Intent intent = new Intent();
+                        intent.setPackage("com.example.crimereportportalapp");
+                        intent.setClassName("com.example.crimereportportalapp","com.example.crimereportportalapp.retrive_data");
+                        startActivity(intent);
+
+
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        Toast.makeText(Admin_page.this, "welcome....", Toast.LENGTH_SHORT).show();
+                        break;
+
+                    case R.id.help_menu:
+                        Toast.makeText(Admin_page.this, "I can't help you ", Toast.LENGTH_LONG).show();break;
+
+                    case R.id.Logout_menu:
+                        Intent intent2 = new Intent(Admin_page.this, MainActivity.class);
+                        startActivity(intent2);
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        Toast.makeText(Admin_page.this, "Log out ", Toast.LENGTH_LONG).show();
+                        break;
+                    default:
+                        return true;
+
+
+                }
+                return true;
+            }
+        });
+    }
+}

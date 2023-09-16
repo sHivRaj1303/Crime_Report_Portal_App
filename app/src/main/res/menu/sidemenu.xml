@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_menu"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/Add_crime_menu"
+            android:icon="@drawable/baseline_add_circle_outline_24"
+            android:title="Add Crime " />
+
+        <item
+            android:id="@+id/search_menu"
+            android:icon="@drawable/baseline_search_24"
+            android:title="Search crime   " />
+
+
+
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Authentication">
+
+            <menu>
+
+                <item
+                    android:id="@+id/Logout_menu"
+                    android:icon="@drawable/baseline_send_24"
+                    android:title="Log out" />
+
+
+            </menu>
+
+        </item>
+    </group>
+    <item android:title="Help">
+
+
+        <menu>
+            <item
+                android:id="@+id/help_menu"
+                android:icon="@drawable/baseline_insert_comment_24"
+                android:title="Help" />
+        </menu>
+    </item>
+
+</menu>
